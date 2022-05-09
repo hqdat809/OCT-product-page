@@ -1,0 +1,124 @@
+.wrapper-content {
+    display: flex;
+    margin-top: 50px;
+
+    .left-content {
+        flex: 1;
+        width: 50%;
+        height: 500px;
+
+        .swiper-button-next {
+            right: 15px;
+        }
+
+        .mySwiper2 {
+            width: 80%;
+            height: 400px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+
+        .mySwiper {
+            width: 80%;
+        }
+
+        .swiper-slide-thumb-active {
+            img {
+                opacity: 0.5;
+                border: 3px solid var(--primary-orange);
+            }
+
+        }
+
+        .swiper-slide {
+            border-radius: 20px;
+            margin-right: 7px !important;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .right-content {
+        flex: 1;
+        width: 1000px;
+        padding-top: 50px;
+        padding-left: 50px;
+
+        .product-infor {
+            display: flex;
+            flex-direction: column;
+
+            .brand {
+                color: var(--primary-orange);
+            }
+
+            .title-product {
+                margin: 10px 0 !important;
+                font-size: 43px;
+            }
+
+            .description-product {
+                color: grey;
+            }
+
+            .last-price {
+                display: flex;
+                align-items: center;
+                font-size: 25px;
+                font-weight: bold;
+
+                .discount-price {
+                    padding: 5px 5px;
+                    margin-left: 20px;
+                    background-color: var(--primary-pale-orange);
+                    color: var(--primary-orange);
+                    border-radius: 10px;
+                    font-size: 14px;
+                }
+            }
+
+            .old-price {
+                color: rgb(172, 171, 171);
+                text-decoration: line-through;
+            }
+        }
+
+        .product-select {
+            display: flex;
+            align-items: center;
+
+            .product-select-quantity {
+                padding: 10px 10px;
+                background-color: rgb(212, 212, 212);
+                border-radius: 10px;
+                margin-right: 20px;
+
+                .quantity-select {
+                    padding: 10px 10px;
+                    font-weight: 800;
+                    cursor: default;
+                }
+
+                span {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    padding: 10px 10px;
+                }
+            }
+
+            .product-select-add {
+                background-color: var(--primary-orange);
+                padding: 10px 80px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
