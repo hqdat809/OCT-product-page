@@ -1,4 +1,4 @@
-import { ADD_CART, EDIT_CART, DELETE_CART } from "./constant";
+import { ADD_CART, TOGGLE_MODAL, DELETE_CART } from "./constant";
 import img1 from "../assets/images/image-product-1.jpg"
 import img2 from "../assets/images/image-product-2.jpg"
 import img3 from "../assets/images/image-product-3.jpg"
@@ -11,6 +11,7 @@ import imgThumb4 from "../assets/images/image-product-4-thumbnail.jpg"
 
 const initState = {
     carts: [],
+    toggleModal: false,
     product: {
         images: {
             img1,
@@ -44,6 +45,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 carts: newState
+            }
+        case TOGGLE_MODAL:
+            return {
+                ...state,
+                toggleModal: action.payload
             }
         default:
             throw new Error('invalid ')

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { toggleModal } from '../../store/actions'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,6 +20,11 @@ function LeftContent() {
 
     const productInfor = state.product
 
+    const handleOpenModal = () => {
+
+        dispatch(toggleModal(true))
+    }
+
     return (
         <div className='left-content'>
             <Swiper
@@ -31,6 +37,7 @@ function LeftContent() {
                 thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper2"
+                onClick={handleOpenModal}
             >
                 <SwiperSlide>
                     <img src={productInfor.images.img1} alt="img" />

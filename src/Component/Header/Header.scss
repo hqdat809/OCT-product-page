@@ -4,6 +4,10 @@
     align-items: center;
     border-bottom: 2px solid #ccc;
 
+    .icon-menu-header {
+        display: none;
+    }
+
     .logo-wrapper {
         background-image: url("../../assets/images/logo.svg");
         width: 120px;
@@ -11,6 +15,48 @@
         background-repeat: no-repeat;
         padding-right: 50px;
         flex: 1;
+    }
+
+    .overlay-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        z-index: 10;
+        display: none;
+
+        &.active-overlay {
+            display: block;
+        }
+    }
+
+    .mid-header-mobile {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        color: #000;
+        z-index: 11;
+        width: 260px;
+        padding-left: 20px;
+
+        .icon-close-menu {
+            padding: 15px 15px 15px 0;
+        }
+
+        .mid-header-content {
+            list-style: none;
+
+            .mid-header-item {
+                padding: 15px 0;
+                font-weight: bold;
+            }
+        }
+
     }
 
     .mid-header {

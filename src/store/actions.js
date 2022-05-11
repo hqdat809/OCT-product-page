@@ -1,4 +1,4 @@
-import { ADD_CART, EDIT_CART, DELETE_CART } from "./constant";
+import { ADD_CART, DELETE_CART, TOGGLE_MODAL } from "./constant";
 
 export const addCart = payload => ({
     type: ADD_CART,
@@ -10,7 +10,7 @@ export const deleteCart = payload => ({
     payload
 })
 
-export const editCart = payload => ({
-    type: EDIT_CART,
+export const toggleModal = payload => ({
+    type: TOGGLE_MODAL,
     payload
 })

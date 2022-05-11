@@ -32,7 +32,6 @@
 
         .swiper-slide {
             border-radius: 20px;
-            margin-right: 7px !important;
 
             img {
                 width: 100%;
@@ -70,6 +69,7 @@
                 align-items: center;
                 font-size: 25px;
                 font-weight: bold;
+                margin: 15px 0;
 
                 .discount-price {
                     padding: 5px 5px;
@@ -84,6 +84,8 @@
             .old-price {
                 color: rgb(172, 171, 171);
                 text-decoration: line-through;
+                margin: 15px 0;
+
             }
         }
 
@@ -121,4 +123,6 @@
             }
         }
     }
+
+
 }
